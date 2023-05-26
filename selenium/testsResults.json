@@ -1,0 +1,124 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "add-new-job;new-job-should-be-visible",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "new job should be visible",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I add new job",
+            "match": {
+              "location": "src\\features\\step_definitions\\addJobSteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13022688900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "check available jobs",
+            "match": {
+              "location": "src\\features\\step_definitions\\addJobSteps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4196444899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "there is added job",
+            "match": {
+              "location": "src\\features\\step_definitions\\addJobSteps.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 253668600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "add-new-job",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "add new job",
+    "tags": [],
+    "uri": "src\\features\\addJob.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "delete-job;job-should-be-delited",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "job should be delited",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I delete job",
+            "match": {
+              "location": "src\\features\\step_definitions\\deleteJobSteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 412672899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "check available jobs",
+            "match": {
+              "location": "src\\features\\step_definitions\\addJobSteps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3083311299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "there is no deleted job",
+            "match": {
+              "location": "src\\features\\step_definitions\\deleteJobSteps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 437295800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "delete-job",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "delete job",
+    "tags": [],
+    "uri": "src\\features\\deleteJob.feature"
+  }
+]
