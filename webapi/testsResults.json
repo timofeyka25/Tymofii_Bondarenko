@@ -1,0 +1,185 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "delete-file;file-should-be-deleted",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "file should be deleted",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I upload file \"image.png\" in \"/test\"",
+            "match": {
+              "location": "src\\features\\step_definitions\\uploadFileSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1675884700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I delete file \"image.png\" in \"/test\"",
+            "match": {
+              "location": "src\\features\\step_definitions\\deleteFileSteps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1792860699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "there is no \"image.png\" in \"/test\"",
+            "match": {
+              "location": "src\\features\\step_definitions\\deleteFileSteps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 539710900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "delete-file",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "delete file",
+    "tags": [],
+    "uri": "src\\features\\deleteFile.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "upload-file-with-specific-name;file-should-have-defined-name",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "file should have defined name",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I upload \"image.png\" in \"/test\"",
+            "match": {
+              "location": "src\\features\\step_definitions\\getFileMetadataSteps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1146957699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I get metadata of uploaded file",
+            "match": {
+              "location": "src\\features\\step_definitions\\getFileMetadataSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 413054199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "uploaded file has \"image.png\" name",
+            "match": {
+              "location": "src\\features\\step_definitions\\getFileMetadataSteps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 224300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "upload-file-with-specific-name",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "upload file with specific name",
+    "tags": [],
+    "uri": "src\\features\\getFileMetadata.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "check-uploaded-file-size;upload-a-file",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "Upload a file",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I upload file \"image.png\" in \"/test\"",
+            "match": {
+              "location": "src\\features\\step_definitions\\uploadFileSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1006533500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I check \"image.png\" uploaded to \"/test\"",
+            "match": {
+              "location": "src\\features\\step_definitions\\uploadFileSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 422224600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "check file \"image.png\" in \"/test\" size is equal to filesize of initial file",
+            "match": {
+              "location": "src\\features\\step_definitions\\uploadFileSteps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 390402700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "check-uploaded-file-size",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Check uploaded file size",
+    "tags": [],
+    "uri": "src\\features\\uploadFile.feature"
+  }
+]
